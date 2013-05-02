@@ -1,4 +1,4 @@
 MiniProjects
 ============
 
-Reposity of collection of mini projects
+Repository of collection of mini projects
