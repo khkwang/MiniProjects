@@ -223,30 +223,27 @@ end
 
 starting_cash = 250
 goal = 200
+jmin_wager = 250
 
 bet = RouletteGame::Bet::EVEN
-jmin_wager = 250
 jstrat = RouletteGame::Strategy::double_all_or_nothing(goal)
 rgs = RouletteGames.new(starting_cash, jstrat, bet, jmin_wager)
 rgs.start
 rgs.print_results
 
 bet = RouletteGame::Bet::ODD
-jmin_wager = 250
 jstrat = RouletteGame::Strategy::double_all_or_nothing(goal)
 rgs = RouletteGames.new(starting_cash, jstrat, bet, jmin_wager)
 rgs.start
 rgs.print_results
 
 bet = RouletteGame::Bet::random_even_or_odd
-jmin_wager = 250
 jstrat = RouletteGame::Strategy::double_all_or_nothing(goal)
 rgs = RouletteGames.new(starting_cash, jstrat, bet, jmin_wager)
 rgs.start
 rgs.print_results
 
 bet = RouletteGame::Bet::OPPOSITE_EVEN_ODD
-jmin_wager = 250
 jstrat = RouletteGame::Strategy::double_all_or_nothing(goal)
 rgs = RouletteGames.new(starting_cash, jstrat, bet, jmin_wager)
 rgs.start
